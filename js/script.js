@@ -22,10 +22,10 @@ $(document).ready(function(){
         var distance = 180;
       
         if ($(window).scrollTop() > distance) {
-            $('header').addClass('colorHeader');
+            $('header').addClass('changeHeader');
         }
           else {
-      $('header').removeClass('colorHeader');
+      $('header').removeClass('changeHeader');
     }
     });
     
@@ -34,7 +34,7 @@ $(document).ready(function(){
 //WORK_THUMBNAILS #################################################################
     
     $(".main").mouseover(function(){
-        var posTop = Math.random(0,1);
+        var posTop = Math.random();
         
         $(".image").show();
         $(".image").css('margin-top', posTop);
@@ -49,7 +49,7 @@ $(document).ready(function(){
 
 //MODAL_WORK ######################################################################
 
- $('.main').on('click', function() {
+ $('.thumb').on('click', function() {
     console.log('CLICK');
 
               
@@ -60,6 +60,6 @@ $(document).ready(function(){
     $('.modal-close').on('click', function() {
         $('.modal').removeClass('modal-isOpen')
     });
-    
 
+console.log("HELLO")    
 
