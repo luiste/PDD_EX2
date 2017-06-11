@@ -14,6 +14,8 @@
     font-size: 8em;
     letter-spacing: -0.04em;
     line-height: 125%;
+    z-index: 10;
+    position: relative;
 }
 
 header h3{
@@ -95,6 +97,8 @@ footer h4{
     background: #222;
     top:0;
     padding-top: 10rem;
+        transition: top 5s ease;
+    transition: background-color 2s ease;
 }
 
 header{
@@ -107,8 +111,7 @@ header{
 
 .scrolled {
     background: #f7f7f7;
-    transition: top 5s ease;
-    transition: background-color 2s ease;
+
 }
 
 .about{
@@ -148,8 +151,10 @@ header{
     height: auto;
     background: #f7f7f7;
     padding: 3em 0 5em 0;
+/*
     position: relative;
     z-index: 2;
+*/
 }
 
 
@@ -160,23 +165,26 @@ header{
 
 .image{
     display: none;
+    position: fixed;
 }
 
 
+/*
 .on{
-/*    display: block;*/
+    display: block;
     float: left;
     z-index: 1;
     position: absolute;
 }
+*/
 
 .tag{
 /*    height: 2rem;*/
     background: #1779ba;
     float: left;
     margin-top: -7rem;
-    z-index: 999;
-    position: absolute;
+    z-index: 30;
+    position: relative;
 }
 
 .main{
@@ -217,6 +225,7 @@ header{
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 999;
 }
 
 .modal-isOpen {
@@ -236,8 +245,9 @@ header{
     width: 100%;
     margin: 0;
     padding: 20px;
-    overflow: auto;
-    position: fixed;
+/*    position: fixed;*/
+    overflow-y: hidden!important;
+    float: inherit;
 }
 
 .test{

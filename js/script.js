@@ -34,11 +34,12 @@ $(document).ready(function(){
 //WORK_THUMBNAILS #################################################################
     
     $(".main").mouseover(function(){
-        var posTop = Math.random();
+        var posTop = Math.random() * 100;
+        console.log(posTop)
         
         $(".image").show();
-        $(".image").css('margin-top', posTop);
-        $(".image").css('margin-left', posTop);
+        $(".image").css('top', posTop + 'px');
+        $(".image").css('margin-left', posTopm + 'px');
     });
     
     $(".main").mouseout(function(){
@@ -54,12 +55,15 @@ $(document).ready(function(){
 
               
         $('.modal').addClass('modal-isOpen');
+//     add class body
      
     });
 
     $('.modal-close').on('click', function() {
         $('.modal').removeClass('modal-isOpen')
     });
+
+
 
 console.log("HELLO")    
 
