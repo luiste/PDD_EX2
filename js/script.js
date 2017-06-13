@@ -39,7 +39,7 @@ $(document).ready(function(){
         
         $(".image").show();
         $(".image").css('top', posTop + 'px');
-        $(".image").css('margin-left', posTopm + 'px');
+        $(".image").css('margin-left', posTop + 'px');
     });
     
     $(".main").mouseout(function(){

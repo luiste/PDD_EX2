@@ -21,7 +21,7 @@
 header h3{
     color: #FFF;
     font-family: 'Fira Sans', sans-serif;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 1em;
 }
 
@@ -59,7 +59,7 @@ footer h3{
 header h4{
     color: #FFF;
     font-family: 'Fira Sans', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1em;
     margin-top:-0.5em;
 }
@@ -97,7 +97,7 @@ footer h4{
     background: #222;
     top:0;
     padding-top: 10rem;
-        transition: top 5s ease;
+    transition: top 5s ease;
     transition: background-color 2s ease;
 }
 
@@ -107,6 +107,8 @@ header{
     float: left;
     z-index: 999;
     position: fixed;
+    transition: top 5s ease;
+    transition: padding 1s ease;
 }
 
 .scrolled {
@@ -120,23 +122,20 @@ header{
 }
 
 .changeHeader{
-    padding: 2em 0 0 0;
+    padding: 1.5em 0 0 0;
     transition: all 1s;
 }
 
 .changeHeader h3{
     color: #1779ba;
-    font-weight: 900;
+/*    font-weight: 900;*/
 }
 
 .changeHeader h4{
     color: #1779ba;
-    font-weight: 400;
+/*    font-weight: 400;*/
 }
 
-.info{
-/*    background-color: aqua;*/
-}
 
 .info a:hover{
     text-decoration: line-through;
@@ -225,7 +224,7 @@ header{
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 999;
+    z-index: 888;
 }
 
 .modal-isOpen {
@@ -236,6 +235,8 @@ header{
     font-size: 1.6rem;
     float: right;
     background: none;
+    z-index: 999;
+    position: relative;
     
 }
 
