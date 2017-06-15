@@ -10,12 +10,24 @@
 .container h2{
     color: #191919;
     font-family: 'Fira Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 8em;
-    letter-spacing: -0.04em;
+    letter-spacing: 0,01em;
     line-height: 125%;
     z-index: 10;
     position: relative;
+}
+
+.project h2{
+    color: #1779ba;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
+    font-size: 8em;
+    letter-spacing: 0,01em;
+    line-height: 125%;
+    z-index: 10;
+    position: relative;
+    padding-bottom: 2em;
 }
 
 header h3{
@@ -31,7 +43,7 @@ header h3{
     font-weight: 700;
     font-size: 1em;
     text-align: left;
-    padding: 0.5em;
+    padding: 0.2em;
 }
 
 .info h3{
@@ -62,6 +74,13 @@ header h4{
     font-weight: 300;
     font-size: 1em;
     margin-top:-0.5em;
+}
+
+.article h4{
+    color: #1779ba;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 2.5em;
 }
 
 footer h4{
@@ -122,7 +141,7 @@ header{
 }
 
 .changeHeader{
-    padding: 1.5em 0 0 0;
+    padding-top: 1.5em;
     transition: all 1s;
 }
 
@@ -167,6 +186,9 @@ header{
     position: fixed;
 }
 
+.on img{
+    opacity: 0.5;
+}
 
 /*
 .on{
@@ -181,13 +203,40 @@ header{
 /*    height: 2rem;*/
     background: #1779ba;
     float: left;
-    margin-top: -7rem;
+    margin: -3.2em 0 0 0.5em;
     z-index: 30;
     position: relative;
 }
 
 .main{
     position: relative;
+}
+
+
+/* ## PROJECT ######################################*/
+
+.project{
+/*    background: yellow;*/
+    height: auto;
+    width: 100%;
+    margin: auto;
+    
+}
+
+.project{
+    background: url("../imgs/cover.jpg") no-repeat;
+    height: 40em; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.article{
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5em 0 30em 0;
 }
 
 
@@ -225,38 +274,137 @@ header{
     right: 0;
     bottom: 0;
     z-index: 888;
+/*    overflow-y: hidden;*/
 }
 
 .modal-isOpen {
-  display: block;  
+    display: block;
 }
 
 .modal-close {
     font-size: 1.6rem;
-    float: right;
+/*    float: right;*/
     background: none;
     z-index: 999;
-    position: relative;
+    position: fixed;
+    right: 2em;
+    padding: 1em 0 0 0;
     
 }
 
 .modal-dialog {
-    background: yellow;
-    height: auto;
+    background: #FFF;
+/*    height: auto;*/
     width: 100%;
     margin: 0;
-    padding: 20px;
+/*    padding: 20px;*/
 /*    position: fixed;*/
-    overflow-y: hidden!important;
+    overflow-y: auto;
     float: inherit;
+}
+
+
+
+/* ## CLOSE MODAL ######################################*/
+
+.close {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+/*  overflow: hidden;*/
+}
+
+.close:hover::before, .close:hover::after {
+  background: #FFF;
+}
+.close::before, .close::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  background: #1779ba;
+}
+.close::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.close::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.close.thick::before, .close.thick::after {
+  height: 2px;
+  margin-top: -2px;
 }
 
 .test{
     top:200em;
     height: 20em;
     background: red;
-    overflow: auto;
     position: relative;
 }
 
+
+/*#####################*/
+
+
+.container h2:hover{
+    color: #1779ba;
+    cursor: crosshair;
+    
+}
+
+
+/*
+.throught {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.throught:before, .throught:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  top: 50%;
+  margin-top: 0.45em;
+  background: #1779ba;
+}
+
+.throught:before {
+  left: -2.5px;
+}
+.throught:after {
+  right: 2.5px;
+  background: #1779ba;
+  -webkit-transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.throught:hover:before {
+  background: #1779ba;
+  width: 100%;
+  -webkit-transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.throught:hover:after {
+  background: #1779ba;
+  width: 100%;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+*/
 
