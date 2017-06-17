@@ -61,7 +61,7 @@ $('.thumb').on('click', function() {
         $('body').css({
             'overflow-y': 'hidden'
         });
-        $("header").css('margin-left', marginLeft + 'em');
+//        $("header").css('margin-left', marginLeft + 'em');
 });
 
     $('.modal-close').on('click', function() {
@@ -95,6 +95,41 @@ $('.thumb').on('click', function() {
 //        });
 //    });
 
+
+$(".main").mouseover(function(){
+    $(".dateProject").css("display", "inline");
+});
+
+ $(".main").mouseout(function(){
+        $(".dateProject").css("display", "none");
+    });   
+
+
+
+
+
+
+
+
+//OBJECT >> SCROLL ######################################################################
+
+$(document).ready(function () {
+    var $horizontal = $('#horizontal');
+
+    $(window).scroll(function () {
+        var s = $(this).scrollTop(),
+            d = $(document).height(),
+            c = $(this).height();
+
+        scrollPercent = (s / (d - c));
+
+        var position = (scrollPercent * ($(document).width() - $horizontal.width()));
+
+        $horizontal.css({
+            'left': position
+        });
+    });
+});
 
 
 
