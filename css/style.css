@@ -27,6 +27,18 @@
     position: relative;
 }
 
+.article h2{
+    color: #1779ba;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
+    font-size: 8em;
+    letter-spacing: 0,01em;
+    line-height: 110%;
+    z-index: 10;
+    position: relative;
+    margin: -1.3em 0 0 0;
+}
+
 .project h2{
     color: #1779ba;
     font-family: 'Fira Sans', sans-serif;
@@ -111,6 +123,22 @@ footer h4{
 }
 
 
+.article-info h3{
+    color: #1779ba;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    padding: 0;
+}
+
+.article-info h4{
+    color: #1779ba;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+
 /* ## END_TYPE ######################################*/
 
 
@@ -145,7 +173,7 @@ header{
 }
 
 .about{
-    height: 30rem;
+    height: 25rem;
     padding-top: 4rem;
 }
 
@@ -171,7 +199,7 @@ header{
 
 
 .object {
-    height: 40em;
+    height: 6em;
 }
 
 #horizontal {
@@ -179,7 +207,7 @@ header{
     float: left;
     width: auto;
     background: none;
-    padding-left: 3em;
+    padding-left: 2em;
     /*left: 0;
     top: 90px;*/
 }
@@ -214,14 +242,7 @@ header{
     opacity: 0.5;
 }
 
-/*
-.on{
-    display: block;
-    float: left;
-    z-index: 1;
-    position: absolute;
-}
-*/
+
 
 .tag{
 /*    height: 2rem;*/
@@ -242,6 +263,7 @@ span{
     left: 0;
     font-weight: 300;
     transition-duration: 2s;
+    
     
 }
 
@@ -269,7 +291,7 @@ span{
 }
 
 .project{
-    background: url("../imgs/cover.jpg") no-repeat;
+    background: url("../imgs/book-open-pages-literature-159872.jpeg") no-repeat;
     height: 40em; 
     background-attachment: fixed;
     background-position: center;
@@ -281,7 +303,21 @@ span{
     max-width: 75rem;
     margin-right: auto;
     margin-left: auto;
-    padding: 5em 0 30em 0;
+    padding: 5em 0 0 0;
+}
+
+.article-info{
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5em 0 10em 0;
+}
+
+
+.project-image{
+    padding-top: 5em;
+    height: auto;;
+    position: relative;
 }
 
 
@@ -350,6 +386,7 @@ span{
 
 
 
+
 .modal-dialog .md-content {
 	-webkit-transform: scale(0.8);
 	-moz-transform: scale(0.8);
@@ -382,11 +419,15 @@ span{
 
 /* ## CLOSE MODAL ######################################*/
 
+
+
+
 .close {
   position: relative;
   display: inline-block;
   width: 40px;
   height: 40px;
+    float: right;
 /*  overflow: hidden;*/
 }
 
@@ -421,13 +462,6 @@ span{
 .close.thick::before, .close.thick::after {
   height: 2px;
   margin-top: -2px;
-}
-
-.test{
-    top:200em;
-    height: 20em;
-    background: red;
-    position: relative;
 }
 
 

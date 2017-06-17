@@ -110,7 +110,6 @@ $(".main").mouseover(function(){
 
 
 
-
 //OBJECT >> SCROLL ######################################################################
 
 $(document).ready(function () {
