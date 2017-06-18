@@ -54,14 +54,12 @@ $(".main").mouseover(function(){
 //MODAL_WORK ######################################################################
 
 $('.thumb').on('click', function() {
-    var marginLeft = -0.3;
     console.log('CLICK');
  
         $('.modal').addClass('modal-isOpen');
         $('body').css({
             'overflow-y': 'hidden'
         });
-//        $("header").css('margin-left', marginLeft + 'em');
 });
 
     $('.modal-close').on('click', function() {
@@ -96,16 +94,27 @@ $('.thumb').on('click', function() {
 //    });
 
 
-$(".main").mouseover(function(){
-    $(".dateProject").css("display", "inline");
-});
-
- $(".main").mouseout(function(){
-        $(".dateProject").css("display", "none");
-    });   
 
 
+//$(".main").mouseover(function(){
+//    $(".dateProject").css("display", "inline");
+//});
+//
+// $(".main").mouseout(function(){
+//        $(".dateProject").css("display", "none");
+//    });   
 
+
+
+  
+$(".main").hover(
+    function() {
+        $(".dateProject").css("margin-left", '0');
+    },
+    function () {
+        $(".dateProject").css( "margin-left", '-50' + 'px' );
+    }
+);
 
 
 
@@ -129,7 +138,6 @@ $(document).ready(function () {
         });
     });
 });
-
 
 
 
